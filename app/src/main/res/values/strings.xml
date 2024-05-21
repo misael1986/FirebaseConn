@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FirebaseConn</string>
+    <string name="textview_text">Cargar Imagenes</string>
+    <string name="button_text">Seleccionar y Guardar</string>
 </resources>

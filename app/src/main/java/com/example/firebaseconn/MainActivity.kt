@@ -62,10 +62,10 @@ class MainActivity : AppCompatActivity() {
                 // On success, download the file URL and display it
                 uploadTask.addOnSuccessListener {
                     // using glide library to display the image
-                    storageRef.child("upload/$sd").downloadUrl.addOnSuccessListener {
+                    storageRef.child("file/$sd").downloadUrl.addOnSuccessListener {
                         Glide.with(this@MainActivity)
                             .load(it)
-                            .into(imageview).view
+                            .into(imageview)
 
                         Log.e("Firebase", "download passed")
                         Toast.makeText(this,"Imagen "+sd.toString()+"cargada a Firebase con exito",Toast.LENGTH_LONG)
